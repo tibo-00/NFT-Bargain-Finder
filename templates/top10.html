@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 10 </title>
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    table.center {
+    margin-left: auto;
+    margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+
+<table class="center" >
+  <tr>
+    <th>Price ETH</th>
+    <th>Collection</th>
+    <th>NFT ID</th>
+  </tr>
+
+
+
+{% for message in top10 %}
+<tr>
+    <td>{{ message }} </td>
+    <td> </td>
+    <td></td>
+    </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
